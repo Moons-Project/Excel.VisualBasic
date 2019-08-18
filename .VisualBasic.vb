@@ -84,11 +84,20 @@ Module Program
   End Sub
 
 
+  ' Async Function AsyncExample(num as Integer) As _
+  '   System.Threading.Tasks.Task(Of Integer)
+  '   ' Await System.Threading.Tasks.Task.Run()
+  '   Tools.Print(num)
+  '   Return num
+  ' End Function
+
 
   ' 程序入口
   Sub Main(args As String())
     PartArray()
     PartProcess()
+
+    ' AsyncExample(1)
 
     Tools.ExitPlayGround()
   End Sub
